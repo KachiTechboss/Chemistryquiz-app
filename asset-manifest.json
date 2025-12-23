@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Chemistryquiz-app/static/css/main.03ccaa38.css",
+    "main.js": "/Chemistryquiz-app/static/js/main.05e299a0.js",
+    "index.html": "/Chemistryquiz-app/index.html",
+    "main.03ccaa38.css.map": "/Chemistryquiz-app/static/css/main.03ccaa38.css.map",
+    "main.05e299a0.js.map": "/Chemistryquiz-app/static/js/main.05e299a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03ccaa38.css",
+    "static/js/main.05e299a0.js"
+  ]
+}

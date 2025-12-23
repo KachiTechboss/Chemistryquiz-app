@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Chemistryquiz-app/static/css/main.20749e9e.css",
+    "main.css": "/Chemistryquiz-app/static/css/main.5bbd1c7a.css",
     "main.js": "/Chemistryquiz-app/static/js/main.cf92c45b.js",
     "index.html": "/Chemistryquiz-app/index.html",
-    "main.20749e9e.css.map": "/Chemistryquiz-app/static/css/main.20749e9e.css.map",
+    "main.5bbd1c7a.css.map": "/Chemistryquiz-app/static/css/main.5bbd1c7a.css.map",
     "main.cf92c45b.js.map": "/Chemistryquiz-app/static/js/main.cf92c45b.js.map"
   },
   "entrypoints": [
-    "static/css/main.20749e9e.css",
+    "static/css/main.5bbd1c7a.css",
     "static/js/main.cf92c45b.js"
   ]
 }

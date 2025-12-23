@@ -1,0 +1,234 @@
+.results-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  padding: 20px;
+}
+
+.results-content {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.score-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 40px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: pulse 0.5s ease-out;
+}
+
+.score-circle.perfect {
+  background: linear-gradient(135deg, #10b981, #34d399);
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.5);
+}
+
+.score-circle.excellent {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+}
+
+.score-circle.good {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.5);
+}
+
+.score-circle.fair {
+  background: linear-gradient(135deg, #ef4444, #f87171);
+  box-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
+}
+
+.score-circle.poor {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.score-display {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  color: white;
+}
+
+.score-number {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.score-total {
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.percentage-display {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.performance-message {
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.results-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-box {
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.stat-box.correct {
+  background: rgba(16, 185, 129, 0.1);
+  border: 2px solid rgba(16, 185, 129, 0.3);
+}
+
+.stat-box.incorrect {
+  background: rgba(239, 68, 68, 0.1);
+  border: 2px solid rgba(239, 68, 68, 0.3);
+}
+
+.stat-icon {
+  font-size: 2rem;
+}
+
+.stat-box.correct .stat-icon {
+  color: var(--success-color);
+}
+
+.stat-box.incorrect .stat-icon {
+  color: var(--danger-color);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: left;
+}
+
+.buttons-container {
+  margin-bottom: 30px;
+}
+
+.retry-button {
+  width: 100%;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.retry-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+}
+
+.retry-button:active {
+  transform: translateY(0);
+}
+
+.encouragement {
+  background: var(--light-bg);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.encouragement p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .results-content {
+    padding: 30px 20px;
+  }
+
+  .score-circle {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+  }
+
+  .score-number {
+    font-size: 2.5rem;
+  }
+
+  .score-total {
+    font-size: 1.1rem;
+  }
+
+  .performance-message {
+    font-size: 1.5rem;
+  }
+
+  .stats-container {
+    gap: 15px;
+  }
+
+  .retry-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+}
